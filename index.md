@@ -1,6 +1,10 @@
-# Informativa sulla privacy di Vici
-
-**Ultimo aggiornamento: 3 agosto 2026**
+---
+layout: default
+lang: it
+title: Informativa sulla privacy
+updated: "Ultimo aggiornamento: 3 agosto 2026"
+description: Informativa sulla privacy di Vici, diario personale di scommesse che funziona interamente sul dispositivo.
+---
 
 ## In sintesi
 

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'it' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} · Vici</title>
+<meta name="description" content="{{ page.description }}">
+<link rel="icon" type="image/png" href="{{ '/icon.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
+<style>
+:root { --fg:#1c1c1e; --muted:#6b6b70; --accent:#00a352; --rule:#e3e3e6; --bg:#fff; }
+@media (prefers-color-scheme: dark) {
+  :root { --fg:#e9e9ea; --muted:#9a9aa0; --accent:#30d97e; --rule:#2e2e32; --bg:#131315; }
+}
+* { box-sizing: border-box; }
+body {
+  margin:0; padding:0 20px 80px; background:var(--bg); color:var(--fg);
+  font:17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust:100%;
+}
+.wrap { max-width:44rem; margin:0 auto; }
+header { padding:56px 0 28px; border-bottom:1px solid var(--rule); margin-bottom:36px; text-align:center; }
+header img.mark { width:88px; height:88px; border-radius:20px; display:block; margin:0 auto 18px; }
+header h1 { font-size:1.7rem; line-height:1.25; margin:0 0 6px; letter-spacing:-0.01em; }
+header .updated { color:var(--muted); font-size:0.9rem; margin:0; }
+nav.lang { margin-top:18px; font-size:0.9rem; }
+nav.lang a { color:var(--accent); text-decoration:none; }
+nav.lang a:hover { text-decoration:underline; }
+nav.lang span { color:var(--muted); }
+h2 { font-size:1.2rem; margin:2.2em 0 0.6em; letter-spacing:-0.01em; }
+h2:first-of-type { margin-top:0; }
+p, li { color:var(--fg); }
+ul { padding-left:1.3em; }
+li { margin:0.4em 0; }
+strong { font-weight:600; }
+a { color:var(--accent); }
+hr { border:0; border-top:1px solid var(--rule); margin:3em 0 1.6em; }
+footer { color:var(--muted); font-size:0.85rem; text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <img class="mark" src="{{ '/icon.png' | relative_url }}" alt="Vici">
+  <h1>{{ page.title }}</h1>
+  <p class="updated">{{ page.updated }}</p>
+  <nav class="lang">
+    {% if page.lang == 'en' %}
+      <a href="{{ '/' | relative_url }}">Italiano</a> <span>· English</span>
+    {% else %}
+      <span>Italiano ·</span> <a href="{{ '/en/' | relative_url }}">English</a>
+    {% endif %}
+  </nav>
+</header>
+{{ content }}
+<hr>
+<footer>Vici · Giacomo Muzzolon · geck.developer@gmail.com</footer>
+</div>
+</body>
+</html>
