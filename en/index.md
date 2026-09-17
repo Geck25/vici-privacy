@@ -2,8 +2,8 @@
 layout: default
 lang: en
 title: Privacy Policy
-updated: "Last updated: 3 August 2026"
-description: Privacy policy for Vici, a personal betting diary that runs entirely on your device.
+updated: "Last updated: 17 September 2026"
+description: Privacy policy for Vici, a personal betting diary that keeps your data on your device.
 ---
 
 *This is a courtesy translation. In case of discrepancy, the
@@ -11,20 +11,23 @@ description: Privacy policy for Vici, a personal betting diary that runs entirel
 
 ## Summary
 
-Vici is a personal betting diary that runs entirely on your device. There are no
-accounts, there are no servers, and we collect nothing: the data you enter stays
-on your iPhone and is never transmitted to us or to third parties. We use no
-analytics, we do not profile you, and we show no advertising. There is no
-artificial intelligence of any kind, and no connection to bookmakers or gambling
-operators.
+Vici is a personal betting diary that runs on your device. There are no
+accounts and we collect nothing: the data you enter stays on your iPhone. Its
+only networked feature is checking match results, which is optional, turns on
+only if you configure a server yourself, and sends the minimum needed (teams,
+date and the markets you played), with no stakes, odds or identifiers, and
+without the server keeping the request. We use no analytics, we do not profile
+you, and we show no advertising. There is no artificial intelligence of any
+kind, and no connection to bookmakers or gambling operators.
 
 ## Who processes the data
 
 Data controller: **Giacomo Muzzolon**
 Contact: **geck.developer@gmail.com**
 
-Because no data ever leaves your device, the controller has no access to the
-information you enter in the app.
+The controller has no access to the information you enter in the app: your
+data stays on the device, and what the results check transmits is not retained
+(see "Network connections").
 
 ## What data the app handles
 
@@ -52,8 +55,19 @@ is tied to your Apple ID: we have no access to it.
 
 ## Network connections
 
-In the current version, Vici **makes no network connections at all**. The app
-works entirely offline and sends no data to any server, including ours.
+Vici works offline. Its only networked feature is checking match results, and it
+is optional: it turns on only if you enter, in Settings, the address of a
+results server and the token to reach it. Until you do, the app makes no network
+connection at all.
+
+When you use it, the app sends the two team names, the date of the match and the
+text of the markets you played on that match (for example "Over 2.5"): that is
+what the server needs to decide whether the bet is won or lost. It does not send
+stakes, odds, your balance or any outcome you already recorded. No account,
+identifier, photo or location is sent. The server keeps no record of requests
+and no access log: once it has answered, nothing of what you sent remains; only
+match results, which are public data, are cached. There are no third-party
+SDKs, analytics or tracking tools.
 
 ## Sharing with third parties
 
@@ -83,11 +97,18 @@ choose to write down, in the same way you would note them in a notebook.
 
 ## No artificial intelligence
 
-Vici **uses no artificial intelligence whatsoever**. There are no AI models in
-the app, no automated processing is performed on your data, and nothing you
-enter — text, amounts, images of betting slips — is sent to third-party AI
-services or used to train any model. The statistics and charts you see are plain
-arithmetic computed on your device from the data you entered.
+Vici contains no artificial-intelligence models and uses none, either on the
+device or over the network.
+
+To read a photographed betting slip, the app uses the operating system's text
+recognition (Apple's Vision framework) and a rule-based text parser bundled with
+the app. Everything happens **entirely on your iPhone**.
+
+The photo never leaves your device. It is not sent to us, not sent to any third
+party, not retained after the bet is created, and never used to train any model.
+Processing happens locally and works with no internet connection. The statistics
+and charts you see are plain arithmetic computed on your device from the data
+you entered.
 
 ## Exporting and importing your data
 
@@ -99,7 +120,12 @@ or who you share it with.
 
 Importing **replaces** the data currently in the app.
 
-## Photos
+## Camera and Photos
+
+To read a betting slip you can take a photo or pick one from your library: iOS
+asks for camera permission only when you start a scan, and the system picker
+lets you choose a single image without giving the app access to your library.
+Manual entry works with no permission at all.
 
 When you share a picture of a betting slip, you can choose to save it to your
 Photos library. In that case iOS asks your permission to **add** the image: Vici
@@ -135,9 +161,10 @@ Vici deals with betting and is not intended for anyone under 18.
 ## Your rights
 
 Regulation (EU) 2016/679 (GDPR) grants you rights of access, rectification,
-erasure, restriction, objection, and data portability. Because Vici neither
-transmits nor stores your data outside your device, the controller holds no
-information against which to exercise those rights: you already have direct and
+erasure, restriction, objection, and data portability. Because Vici does not
+store your data outside your device (what the results check transmits is not
+retained), the controller holds no information against which to exercise those
+rights: you already have direct and
 complete access to your data inside the app, you can correct it at any time,
 export it in readable JSON, and delete it in full.
 

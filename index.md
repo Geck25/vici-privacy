@@ -2,26 +2,30 @@
 layout: default
 lang: it
 title: Informativa sulla privacy
-updated: "Ultimo aggiornamento: 3 agosto 2026"
-description: Informativa sulla privacy di Vici, diario personale di scommesse che funziona interamente sul dispositivo.
+updated: "Ultimo aggiornamento: 17 settembre 2026"
+description: Informativa sulla privacy di Vici, diario personale di scommesse che tiene i tuoi dati sul dispositivo.
 ---
 
 ## In sintesi
 
-Vici è un diario personale di scommesse che funziona interamente sul tuo
-dispositivo. Non abbiamo account, non abbiamo server e non raccogliamo nulla:
-i dati che inserisci restano sul tuo iPhone e non vengono trasmessi a noi né a
-terze parti. Non usiamo strumenti di analisi, non profiliamo e non mostriamo
-pubblicità. Non c'è alcuna intelligenza artificiale e nessun collegamento con
-bookmaker od operatori di gioco.
+Vici è un diario personale di scommesse che funziona sul tuo dispositivo. Non
+abbiamo account e non raccogliamo nulla: i dati che inserisci restano sul tuo
+iPhone. L'unica funzione che usa la rete è la verifica dei risultati, che è
+facoltativa, si attiva solo se configuri tu un server e invia il minimo
+necessario (squadre, data e mercati giocati), senza importi, quote o
+identificativi, e senza che il server conservi la richiesta. Non usiamo
+strumenti di analisi, non profiliamo e non mostriamo pubblicità. Non c'è alcuna
+intelligenza artificiale e nessun collegamento con bookmaker od operatori di
+gioco.
 
 ## Chi tratta i dati
 
 Titolare del trattamento: **Giacomo Muzzolon**
 Contatto: **geck.developer@gmail.com**
 
-Poiché nessun dato lascia il tuo dispositivo, il titolare non ha accesso alle
-informazioni che inserisci nell'app.
+Il titolare non ha accesso alle informazioni che inserisci nell'app: i dati
+restano sul dispositivo, e quello che la verifica dei risultati trasmette non
+viene conservato (vedi "Connessioni di rete").
 
 ## Quali dati tratta l'app
 
@@ -49,9 +53,20 @@ condizioni ed è cifrato e associato al tuo ID Apple: noi non vi abbiamo accesso
 
 ## Connessioni di rete
 
-Nella versione attuale Vici **non effettua alcuna connessione di rete**. L'app
-funziona completamente offline e non invia dati a nessun server, incluso il
-nostro.
+Vici funziona senza connessione. L'unica funzione che usa la rete è la verifica
+dei risultati, ed è facoltativa: si attiva solo se inserisci in Impostazioni
+l'indirizzo di un server dei risultati e il token per accedervi. Finché non lo
+fai, l'app non effettua nessuna connessione.
+
+Quando la usi, l'app invia i nomi delle due squadre, la data della partita e il
+testo dei mercati che hai giocato su quella partita (per esempio "Over 2.5"): è
+quello che serve al server per stabilire se la giocata è vinta o persa. Non
+invia importi, quote, saldo né gli esiti già segnati. Non vengono inviati
+account, identificativi, foto o posizione. Il server non conserva le richieste
+e non tiene log di accesso: dopo la risposta, di quello che hai inviato non
+resta niente; in cache restano solo i risultati delle partite, che sono dati
+pubblici. Non ci sono SDK di terze parti, strumenti di analisi o di
+tracciamento.
 
 ## Condivisione con terze parti
 
@@ -83,12 +98,19 @@ quaderno.
 
 ## Nessuna intelligenza artificiale
 
-Vici **non utilizza alcun sistema di intelligenza artificiale**. Non ci sono
-modelli di IA nell'app, non vengono eseguite elaborazioni automatiche dei tuoi
-dati e nulla di ciò che inserisci — testi, importi, immagini di scontrini —
-viene inviato a servizi di IA di terze parti né utilizzato per addestrare alcun
-modello. Le statistiche e i grafici che vedi sono semplici calcoli aritmetici
-eseguiti sul dispositivo a partire dai dati che hai inserito.
+Vici non contiene modelli di intelligenza artificiale e non ne utilizza alcuno,
+né sul dispositivo né in rete.
+
+Per leggere una schedina fotografata, l'app usa il riconoscimento del testo del
+sistema operativo (il framework Vision di Apple) e un analizzatore di testo
+incluso nell'app, che applica regole fisse. Tutto avviene **interamente sul tuo
+iPhone**.
+
+La foto non lascia mai il dispositivo. Non viene inviata a noi, non viene
+inviata a servizi di terze parti, non viene conservata dopo l'inserimento e non
+viene usata per addestrare alcun modello. L'elaborazione avviene in locale anche
+senza connessione a internet. Le statistiche e i grafici che vedi sono semplici
+calcoli aritmetici eseguiti sul dispositivo a partire dai dati che hai inserito.
 
 ## Esportazione e importazione dei dati
 
@@ -100,7 +122,13 @@ conservi o a chi lo condividi.
 
 L'importazione **sostituisce** i dati presenti nell'app.
 
-## Foto
+## Fotocamera e Foto
+
+Per leggere una schedina puoi scattare una foto o sceglierne una dalla
+libreria: iOS chiede il permesso della fotocamera solo quando avvii una
+scansione, e il selettore di sistema ti fa scegliere una singola immagine senza
+dare all'app accesso alla libreria. L'inserimento manuale funziona senza alcun
+permesso.
 
 Quando condividi l'immagine di uno scontrino, puoi scegliere di salvarla nella
 tua libreria Foto. In quel caso iOS ti chiede il permesso di **aggiungere**
@@ -140,8 +168,9 @@ Vici tratta il tema delle scommesse e non è destinata a minori di 18 anni.
 
 Il Regolamento (UE) 2016/679 (GDPR) ti riconosce diritti di accesso, rettifica,
 cancellazione, limitazione, opposizione e portabilità dei dati personali. Poiché
-Vici non trasmette né conserva i tuoi dati al di fuori del tuo dispositivo, il
-titolare non dispone di alcuna informazione su cui esercitare tali diritti: hai
+Vici non conserva i tuoi dati al di fuori del tuo dispositivo (quello che la
+verifica dei risultati trasmette non viene conservato), il titolare non dispone
+di alcuna informazione su cui esercitare tali diritti: hai
 già accesso diretto e completo ai tuoi dati dentro l'app, puoi correggerli in
 qualsiasi momento, esportarli in formato JSON leggibile e cancellarli
 integralmente.
